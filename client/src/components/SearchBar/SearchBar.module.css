@@ -1,0 +1,18 @@
+
+.input {
+  background-color: rgba(21, 216, 213, 0.5);
+  height: 35px;
+  font-size: 20px;
+  margin-top: 23px;
+  border-radius: 8px 0px 0px 8px;
+  border: 0px 3px 3px 0px solid black;
+}
+
+.button {
+  font-size: 18px;
+  background-color: rgba(13, 96, 94, 0.5);
+  margin-top: 15px;
+  border-radius: 0px 8px 8px 0px;
+  border: 0px 3px 3px 0px solid black;
+  height: 35px;
+}

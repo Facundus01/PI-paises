@@ -1,0 +1,70 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(54, 206, 204, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .input {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .errors {
+    font-size: 25px;
+    color: red;
+  }
+  
+  .label {
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .divs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttonSubmit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+  }
+  
+  .flag {
+    height: 30px;
+    width: 40px;
+  }
+  
+  .divCountries {
+    display: flex;
+    margin-top: 10px;
+  
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(5, 14, 14, 0.5);
+  }
+  
+  .divCountry {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    background-color: rgba(20, 81, 80, 0.5);
+  }
+  
+  .buttonSubmit:hover {
+    background-color: aquamarine;
+  }

@@ -1,0 +1,104 @@
+.Detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(40, 125, 175, 0.913);
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+  
+  .img {
+    max-width: 80%;
+    height: 250px;
+  }
+  
+  .pe {
+    font-size: 22px;
+  }
+  
+  .name {
+    font-size: 50px;
+  }
+  
+  .containerActivities {
+    background-color: rgba(14, 71, 70, 0.5);
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 7px;
+  }
+  
+  .divActivites {
+    background-color: rgba(163, 176, 176, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .h3 {
+    font-size: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .activity {
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: salmon;
+    margin: 10px;
+    padding: 30px;
+  }
+  
+  .divPadre {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .activityNone {
+    padding: 20px;
+  }
+  
+  .Button {
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  .imagenBack {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .buttonAct {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .divButton {
+    display: flex;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgba(31, 156, 167, 0.326);
+    border: 3px solid black;
+    border-radius: 7px;
+    width: 100px;
+  }
+
+  .divButton:hover{
+    background-color: rgba(1, 120, 130, 0.326);
+  }
+  
+  .Detail:hover {
+    background-color: rgba(241, 241, 246, 0.913);
+  }

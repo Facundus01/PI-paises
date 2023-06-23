@@ -1,0 +1,30 @@
+.card {
+    border: 1px solid black;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+  
+    background-color: rgba(21, 216, 213, 0.5);
+  
+    font-size: 30px;
+    margin: 5px;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    width: 150px;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    background-color: rgba(1, 1, 1, 0.844);
+    color: white;
+  }
+  
+  a:visited {
+    color: inherit;
+  }

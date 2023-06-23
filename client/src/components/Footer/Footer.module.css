@@ -1,0 +1,21 @@
+.imagen {
+    width: 25px;
+    margin-left: 20px;
+  }
+  
+  .divFooter {
+    display: flex;
+    flex-direction: row;
+    background: grey;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pe {
+    margin-right: 400px;
+  }

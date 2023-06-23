@@ -1,0 +1,26 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: aliceblue;
+  }
+  
+  .button {
+    margin-top: 4.5em;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-decoration: none;
+    background-color: rgba(54, 206, 204, 0.5);
+    margin-left: 800px;
+    margin-right: 800px;
+    border-radius: 9px;
+    margin-bottom: 350px;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: rgba(19, 97, 157, 0.5);
+  }
+  h1 {
+    font-size: 100px;
+  }
