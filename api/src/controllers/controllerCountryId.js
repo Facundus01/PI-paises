@@ -8,10 +8,10 @@ const countryFind = async (id) => {
     include: { model: Activity, through: { attributes: [] } },
   });
 
-  if (country) {
-    return country;
-  } else {
+  if (!country) {
     throw new Error("Country Not Found");
+  } else {
+    return country
   }
 };
 

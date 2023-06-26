@@ -15,7 +15,7 @@ const ActivityPut = async (id, body) => {
     throw new Error("Activity not found");
   } else {
     if (!hasValues(body)) {
-      throw new Error("Uou do not send anything to modify");
+      throw new Error("You do not send anything to modify");
     } else {
       body.name && typeof body.name === "string"
         ? (activity.name = body.name)

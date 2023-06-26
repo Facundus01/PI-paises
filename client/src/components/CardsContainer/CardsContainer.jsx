@@ -68,8 +68,8 @@ const CardsContainer = () => {
           name="orderName"
           onChange={handlerOrderName}
         >
-          <option disabled={true}> Alphabetical Order </option>
           <option hidden> Choose Alphabetical Order</option>
+          <option disabled={true}> Select an Order </option>
           <option value="Ascendente">A-Z</option>
           <option value="Descendente">Z-A</option>
         </select>
@@ -80,8 +80,8 @@ const CardsContainer = () => {
           name="orderPopulation"
           onChange={handlerOrderPopulation}
         >
-          <option disabled={true}>Population Order </option>
           <option hidden>Choose Population Order</option>
+          <option disabled={true}> Select an Order </option>
           <option value="Ascendente">Elderly</option>
           <option value="Descendente">Minor</option>
         </select>
@@ -96,6 +96,7 @@ const CardsContainer = () => {
           onChange={handlerFilterContinent}
         >
           <option hidden>Choose Continent</option>
+          <option disabled={true}>Select a Continent</option>
           <option value="All">All Continents</option>
           <option value="North America">North America</option>
           <option value="South America">South America</option>
@@ -113,7 +114,7 @@ const CardsContainer = () => {
           onChange={handlerFilterActivity}
         >
           <option hidden>Choose Activity</option>
-          <option disabled={true}>Select Activity</option>
+          <option disabled={true}>Select an Activity</option>
           {activities.map((activity) => (
             <option value={activity.Countries.map((country) => country.id)}>
               {activity.name}
@@ -126,7 +127,7 @@ const CardsContainer = () => {
           onChange={handlerDeleteAcitivty}
         >
           <option hidden>Delete Activity</option>
-          <option disabled={true}>Choose Activity</option>
+          <option disabled={true}>Select an Activity</option>
           {activities.map((activity) => (
             <option value={activity.id}>{activity.name}</option>
           ))}

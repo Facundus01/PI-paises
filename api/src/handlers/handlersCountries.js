@@ -12,7 +12,7 @@ const getCountries = async (req, res) => {
 };
 
 const getCountry = async (req, res) => {
-  const { idPais } = req.params;
+const { idPais } = req.params;
   try {
     const {
       id,
@@ -42,7 +42,7 @@ const getCountry = async (req, res) => {
 };
 
 const getCountryName = async (req, res) => {
-  const name = req.query;
+const name = req.query;
   try {
     const countriesFind = await countriesName(name);
 

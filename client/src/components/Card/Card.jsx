@@ -45,6 +45,6 @@ class Card extends React.Component{
     </div>
     )
   }
-}
+};
 Si este fuera el componente CardsContainer tendriamos que usar mapStateToProps y mapDispatchToProps
 */ 

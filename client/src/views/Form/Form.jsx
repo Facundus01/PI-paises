@@ -49,7 +49,7 @@ const Form = () => {
           )
         );
       } else {
-        alert("Pais ya agregado");
+        alert("Country already added");
       }
     } else {
       const { name, value } = event.target;

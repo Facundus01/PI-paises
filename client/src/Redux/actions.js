@@ -15,7 +15,7 @@ import {
 
 export const getCountries = () => {
   return async function (dispatch) {
-    const dbData = await axios.get("http://localhost:3001/countries");
+    const dbData = await axios.get("countries");
     const countries = dbData.data.allCountries;
     dispatch({ type: GET_COUNTRIES, payload: countries });
   };
@@ -25,7 +25,7 @@ export const getCountries = () => {
 
 export const getCountries = () => {
   return function (dispatch) {
-   fetch("http://localhost:3001/countries")
+   fetch("countries")
    .then(response => response.json())
    .then(data => {
     return dispatch({ type: GET_COUNTRIES, payload: data.allCountries });
@@ -37,7 +37,7 @@ export const getCountries = () => {
 
 export const getCountry = (id) => {
   return async function (dispatch) {
-    const dbData = await axios.get(`http://localhost:3001/countries/${id}`);
+    const dbData = await axios.get(`countries/${id}`);
     const country = dbData.data;
     dispatch({ type: GET_COUNTRY, payload: country });
   };
@@ -47,7 +47,7 @@ export const getCountry = (id) => {
 
 export const getCountry = (id) => {
   return function (dispatch) {
-    fetch(`http://localhost:3001/countries/${id}`)
+    fetch(`countries/${id}`)
     .then(response => response.json())
     .then(data => {
       return dispatch({ type: GET_COUNTRY, payload: data });
@@ -72,7 +72,7 @@ export const searchCountries = (search) => {
   return async function (dispatch) {
     try {
       const dbData = await axios.get(
-      `http://localhost:3001/countries/name?name=${search}`
+      `countries/name?name=${search}`
       );
       return dispatch({
         type: SEARCH_COUNTRIES,
@@ -100,7 +100,7 @@ export const orderPopulation = (value) => {
 
 export const getActivities = () => {
   return async function (dispatch) {
-    const dbData = await axios.get("http://localhost:3001/activities");
+    const dbData = await axios.get("activities");
     const activities = dbData.data.actividadTuristica;
 
     dispatch({ type: GET_ACTIVITIES, payload: activities });
@@ -111,7 +111,7 @@ export const getActivities = () => {
 
 export const getActivities = () => {
   return function (dispatch) {
-    fetch("http://localhost:3001/activities")
+    fetch("activities")
     .then(response => response.json())
     .then(data =>{
       return dispatch({type:GET_ACTIVITIES, payload: data.actividadTuristica})
@@ -129,7 +129,7 @@ export const filterActivity = (value) => {
 
 export const deleteAcitivty = (id) => {
   return async (dispatch) => {
-    const res = await axios.delete(`http://localhost:3001/activities/${id}`);
+    const res = await axios.delete(`activities/${id}`);
     alert(res.data);
     return dispatch({
       type: DELETE_ACTIVITY,

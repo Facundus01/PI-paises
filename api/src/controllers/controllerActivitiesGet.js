@@ -8,10 +8,10 @@ const ActivitiesGet = async () => {
       through: { attributes: [] },
     },
   });
-  if (allActivities) {
-    return allActivities;
-  } else {
+  if (!allActivities) {
     throw new Error("No activity found");
+  } else {
+    return allActivities;
   }
 };
 

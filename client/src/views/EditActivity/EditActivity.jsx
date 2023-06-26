@@ -12,13 +12,17 @@ const EditActivity = () => {
 
   const [put, setPut] = useState({
     name: "",
-    difficulty: "",
-    duration: "",
+    difficulty: 0,
+    duration: 0,
     season: "",
   });
 
   const changeHandler = (event) => {
     const { name, value } = event.target;
+    name === "difficulty" || name === "duration" 
+    ? 
+    setPut({ ...put, [name]: parseInt(value)})
+    :
     setPut({ ...put, [name]: value });
   };
 
@@ -66,6 +70,7 @@ const EditActivity = () => {
             onChange={changeHandler}
           />
         </div>
+        {console.log(put)}
         <div className={style.div}>
           <label>Duration</label>
           <input

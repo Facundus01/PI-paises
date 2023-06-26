@@ -5,7 +5,7 @@ const NotFound = () => {
     <div className={style.notFound}>
       <h1 className={style.h1}>Not Found</h1>
       <Link className={style.button} to="/">
-        Volver al inicio
+        Back to Start
       </Link>
     </div>
   );
